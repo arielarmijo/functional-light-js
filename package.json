@@ -8,6 +8,7 @@
   "author": "Kyle Simpson",
   "license": "License: CC BY-NC-ND 4.0",
   "devDependencies": {
-    "gitbook-cli": "^2.3.2"
+    "gitbook-cli": "^2.3.2",
+    "svgexport": "^0.4.2"
   }
 }
