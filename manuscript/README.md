@@ -1,95 +1,23 @@
 # Functional-Light JavaScript
 
-<a href="https://leanpub.com/fljs"><img src="images/marketing/front-cover-small.png" width="20%"></a>
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-blue.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
-[![Buy on Leanpub](https://img.shields.io/badge/Buy-Leanpub-yellow.svg)](https://leanpub.com/fljs) [![Buy on Amazon](https://img.shields.io/badge/Buy-Amazon-yellow.svg)](http://amazon.fljsbook.com)
+<a href="http://fljsbook.com"><img src="images/marketing/front-cover-small.png" width="25%" align="right" hspace="20" vspace="20" title="Functional-Light JavaScript" alt="Book Cover"></a>
 
-## Table of Contents
+This book is a balanced, pragmatic look at FP in JavaScript. The first edition is now complete. Read here online **for free**, or:
 
-* [Foreword](foreword.md/#foreword)
-* [Preface](preface.md/#preface)
-* [Chapter 1: Why Functional Programming?](ch1.md/#chapter-1-why-functional-programming)
-    * [At a Glance](ch1.md/#at-a-glance)
-    * [Confidence](ch1.md/#confidence)
-    * [Communication](ch1.md/#communication)
-    * [Readability](ch1.md/#readability)
-    * [Perspective](ch1.md/#perspective)
-    * [How to Find Balance](ch1.md/#how-to-find-balance)
-    * [Resources](ch1.md/#resources)
-* [Chapter 2: The Nature Of Functions](ch2.md/#chapter-2-the-nature-of-functions)
-    * [What Is A Function?](ch2.md/#what-is-a-function)
-    * [Function Input](ch2.md/#function-input)
-    * [Named Arguments](ch2.md/#named-arguments)
-    * [Function Output](ch2.md/#function-output)
-    * [Functions Of Functions](ch2.md/#functions-of-functions)
-    * [Syntax](ch2.md/#syntax)
-    * [What's This?](ch2.md/#whats-this)
-* [Chapter 3: Managing Function Inputs](ch3.md/#chapter-3-managing-function-inputs)
-    * [All For One](ch3.md/#all-for-one)
-    * [Adapting Arguments to Parameters](ch3.md/#adapting-arguments-to-parameters)
-    * [Some Now, Some Later](ch3.md/#some-now-some-later)
-    * [One At A Time](ch3.md/#one-at-a-time)
-    * [Order Matters](ch3.md/#order-matters)
-    * [No Points](ch3.md/#no-points)
-* [Chapter 4: Composing Functions](ch4.md/#chapter-4-composing-functions)
-    * [Output To Input](ch4.md/#output-to-input)
-    * [General Composition](ch4.md/#general-composition)
-    * [Reordered Composition](ch4.md/#reordered-composition)
-    * [Abstraction](ch4.md/#abstraction)
-    * [Revisiting Points](ch4.md/#revisiting-points)
-* [Chapter 5: Reducing Side Effects](ch5.md/#chapter-5-reducing-side-effects)
-    * [Effects On The Side, Please](ch5.md/#effects-on-the-side-please)
-    * [Once Is Enough, Thanks](ch5.md/#once-is-enough-thanks)
-    * [Pure Bliss](ch5.md/#pure-bliss)
-    * [There Or Not](ch5.md/#there-or-not)
-    * [Purifying](ch5.md/#purifying)
-* [Chapter 6: Value Immutability](ch6.md/#chapter-6-value-immutability)
-    * [Primitive Immutability](ch6.md/#primitive-immutability)
-    * [Value To Value](ch6.md/#value-to-value)
-    * [Reassignment](ch6.md/#reassignment)
-    * [Performance](ch6.md/#performance)
-    * [Treatment](ch6.md/#treatment)
-* [Chapter 7: Closure vs Object](ch7.md/#chapter-7-closure-vs-object)
-    * [The Same Page](ch7.md/#the-same-page)
-    * [Look Alike](ch7.md/#look-alike)
-    * [Two Roads Diverged In A Wood...](ch7.md/#two-roads-diverged-in-a-wood)
-* [Chapter 8: Recursion](ch8.md/#chapter-8-recursion)
-    * [Definition](ch8.md/#definition)
-    * [Declarative Recursion](ch8.md/#declarative-recursion)
-    * [Stack](ch8.md/#stack)
-    * [Rearranging Recursion](ch8.md/#rearranging-recursion)
-* [Chapter 9: List Operations](ch9.md/#chapter-9-list-operations)
-    * [Non-FP List Processing](ch9.md/#non-fp-list-processing)
-    * [Map](ch9.md/#map)
-    * [Filter](ch9.md/#filter)
-    * [Reduce](ch9.md/#reduce)
-    * [Advanced List Operations](ch9.md/#advanced-list-operations)
-    * [Method vs. Standalone](ch9.md/#method-vs-standalone)
-    * [Looking For Lists](ch9.md/#looking-for-lists)
-    * [Fusion](ch9.md/#fusion)
-    * [Beyond Lists](ch9.md/#beyond-lists)
-* [Chapter 10: Functional Async](ch10.md/#chapter-10-functional-async)
-    * [Time As State](ch10.md/#time-as-state)
-    * [Eager vs Lazy](ch10.md/#eager-vs-lazy)
-    * [Reactive FP](ch10.md/#reactive-fp)
-* [Chapter 11: Putting It All Together](ch11.md/#chapter-11-putting-it-all-together)
-    * [Setup](ch11.md/#setup)
-    * [Stock Events](ch11.md/#stock-events)
-    * [Stock Ticker UI](ch11.md/#stock-ticker-ui)
-* [Appendix A: Transducing](apA.md/#appendix-a-transducing)
-    * [Why, First](apA.md/#why-first)
-    * [How, Next](apA.md/#how-next)
-    * [What, Finally](apA.md/#what-finally)
-* [Appendix B: The Humble Monad](apB.md/#appendix-b-the-humble-monad)
-    * [Type](apB.md/#type)
-    * [Loose Interface](apB.md/#loose-interface)
-    * [Just a Monad](apB.md/#just-a-monad)
-    * [Maybe](apB.md/#maybe)
-    * [Humble](apB.md/#humble)
-* [Appendix C: FP Libraries](apC.md/#appendix-c-fp-libraries)
-    * [Stuff to Investigate](apC.md/#stuff-to-investigate)
-    * [Ramda](apC.md/#ramda-0230)
-    * [Lodash/fp](apC.md/#lodashfp-4174)
-    * [Mori](apC.md/#mori-032)
-    * [Bonus: FPO](apC.md/#bonus-fpo)
-    * [Bonus #2: fasy](apC.md/#bonus-2-fasy)
+<p align="center">
+    <a href="http://fljsbook.com"><img src="https://img.shields.io/badge/Buy-Leanpub-yellow.svg" title="Buy on Leanpub" alt="Buy on Leanpub"></a> <a href="http://manning.fljsbook.com"><img src="https://img.shields.io/badge/Buy-Manning-yellow.svg" title="Buy on Manning" alt="Buy on Manning"></a> <a href="http://amazon.fljsbook.com"><img src="https://img.shields.io/badge/Buy-Amazon-yellow.svg" title="Buy on Amazon" alt="Buy on Amazon"></a>
+</p>
+
+"Functional-Light JavaScript" explores the core principles of functional programming (FP) as they are applied to JavaScript. But what makes this book different is that we approach these principles without drowning in all the heavy terminology. We look at a subset of FP foundational concepts that I call "Functional-Light Programming" (FLP) and apply it to JavaScript.
+
+**Note:** Despite the word "Light" in the title, I do not consider or recommend this book as a "beginner", "easy", or "intro" book on the topic. This book is rigorous and full of gritty detail; it expects a solid foundation of JS knowledge before diving in. "Light" means limited in scope; instead of being more broad, this book goes much deeper into each topic than you typically find in other FP-JavaScript books.
+
+Let's face it: unless you're already a member of the FP cool kids club (I'm not!), a statement like, "a monad is just a monoid in the category of endofunctors", just doesn't mean anything useful to us.
+
+That's not to say the terms are meaning*less* or that FPrs are bad for using them. Once you graduate from Functional-Light, you'll maybe/hopefully want to study FP more formally, and you'll certainly have plenty of exposure to what they mean and why.
+
+But I want you to be able to apply some of the fundamentals of FP to your JavaScript _now_, because I believe it will help you write better, more *reason*able code.
+
+**To read more about the motivations and perspective behind this book, check out the [Preface](manuscript/preface.md).**

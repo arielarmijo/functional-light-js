@@ -1,0 +1,13 @@
+{
+  "name": "functional-light-js",
+  "version": "1.0.0",
+  "description": "This ebook explore the core principles of functional programming in JavaScript",
+  "scripts": {
+    "start": "gitbook serve"
+  },
+  "author": "Kyle Simpson",
+  "license": "License: CC BY-NC-ND 4.0",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}
